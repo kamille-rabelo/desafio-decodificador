@@ -1,0 +1,53 @@
+:root {
+    --cor-primaria: white;
+    --cor-secundaria: #0A3871;
+    --cor-teciaria: #E5E5E5;
+    --cor-quartenaria: #D8DFE8;
+}
+
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: var(--cor-teciaria);
+}
+
+textarea {
+    resize: none;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+::placeholder {
+    color: var(--cor-secundaria);
+}
+
+.input-texto {
+    color: var(--cor-secundaria);
+}
+
+.botao-azul {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    border-color: var(--cor-secundaria);
+    border-radius: 24%;
+}
+
+.botao-sem-fundo {
+    background-color: transparent;
+    color: var(--cor-secundaria);
+    border-color: var(--cor-secundaria);
+    border-radius: 24%;
+
+}
+
+.sessao-output {
+    background-color: var(--cor-primaria);
+    border-radius: 23%;
+}
+
+.output-texto {
+    color: var(--cor-quartenaria);
+}
+
