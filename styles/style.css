@@ -5,11 +5,33 @@
     --cor-quartenaria: #D8DFE8;
 }
 
-
 body {
     box-sizing: border-box;
     height: 100vh;
     background-color: var(--cor-teciaria);
+}
+
+* {
+    font-family: "Inter", sans-serif;
+}
+
+.conteudo-pagina, main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+.sessao-input {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* margin: 2.5rem */
 }
 
 textarea {
@@ -21,33 +43,62 @@ textarea {
 
 ::placeholder {
     color: var(--cor-secundaria);
+    font-size: 2.5rem;
+    text-shadow: .2rem .2rem .5rem grey; 
 }
 
 .input-texto {
     color: var(--cor-secundaria);
+    height: 60vh;
+    font-size: 2rem;
+}
+
+.small {
+    font-size: small;
+}
+
+.botoes {
+    display: flex;
+    gap: 1.5rem;
+}
+
+button {
+    border-color: var(--cor-secundaria);
+    border-radius: 1.5rem;
+    padding: 1.5rem 7rem;
+    font-size: .8rem;
 }
 
 .botao-azul {
     background-color: var(--cor-secundaria);
     color: var(--cor-primaria);
-    border-color: var(--cor-secundaria);
-    border-radius: 24%;
 }
 
 .botao-sem-fundo {
     background-color: transparent;
     color: var(--cor-secundaria);
-    border-color: var(--cor-secundaria);
-    border-radius: 24%;
 
 }
 
 .sessao-output {
     background-color: var(--cor-primaria);
-    border-radius: 23%;
+    /* margin: 2.5rem; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 50vh;
+    height: 90vh;
+    border-radius: 7%;
 }
 
 .output-texto {
     color: var(--cor-quartenaria);
+}
+
+.output-conteudo {
+    padding: 1.5rem;
 }
 
