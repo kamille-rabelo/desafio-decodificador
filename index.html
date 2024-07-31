@@ -31,26 +31,27 @@
                         Apenas letras minúsculas e sem acento.
                     </p>
                     <div class="botoes">
-                        <button class="botao-azul">Criptografar</button>
-                        <button class="botao-sem-fundo">Descriptografar</button>
+                        <button onclick="criptografar()" class="botao-azul">Criptografar</button>
+                        <button onclick="descriptografar()" class="botao-sem-fundo">Descriptografar</button>
                     </div>
                 </div>
             </section>
             <section>
-                <div class="sessao-output">
+                <div class="sessao-output sem-conteudo">
                     <div class="output-conteudo">
                         <img src="./assets/mulher.jpg" alt="mulher">
                         <h3>Nenhuma mensagem encontrada</h3>
                         <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
                     </div>
                 </div>
-                <div class="sessao-output" style="display: none;">
+                <div class="sessao-output com-conteudo" style="display: none;">
                     <textarea class="output-texto" readonly autocomplete="off"></textarea>
                     <button class="botao-sem-fundo">Copiar</button>
                 </div>
             </section>
         </div>
     </main>
+    <script src="./app.js"></script>
 </body>
 
 </html>

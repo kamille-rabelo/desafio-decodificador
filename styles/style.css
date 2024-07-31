@@ -31,7 +31,6 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* margin: 2.5rem */
 }
 
 textarea {
@@ -39,6 +38,9 @@ textarea {
     border: none;
     background-color: transparent;
     outline: none;
+    color: var(--cor-secundaria);
+    height: 60vh;
+    font-size: 2rem;
 }
 
 ::placeholder {
@@ -47,14 +49,13 @@ textarea {
     text-shadow: .2rem .2rem .5rem grey; 
 }
 
-.input-texto {
-    color: var(--cor-secundaria);
-    height: 60vh;
-    font-size: 2rem;
-}
-
 .small {
     font-size: small;
+}
+
+p {
+    display: flex;
+    gap: .5rem;
 }
 
 .botoes {
@@ -74,15 +75,25 @@ button {
     color: var(--cor-primaria);
 }
 
+.botao-azul:hover {
+    background-color: #0d2f5b;
+    border-color: #0d2f5b;
+}
+
 .botao-sem-fundo {
     background-color: transparent;
     color: var(--cor-secundaria);
 
 }
 
+.botao-sem-fundo:hover {
+    background-color: #cbcbcb;
+    border-color: #cbcbcb;
+
+}
+
 .sessao-output {
     background-color: var(--cor-primaria);
-    /* margin: 2.5rem; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -92,13 +103,15 @@ button {
     width: 50vh;
     height: 90vh;
     border-radius: 7%;
+    margin: auto;
+    gap: 2.9rem;
 }
 
 .output-texto {
     color: var(--cor-quartenaria);
+    font-size: 1.5rem;
 }
 
 .output-conteudo {
     padding: 1.5rem;
 }
-
