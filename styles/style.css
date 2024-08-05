@@ -45,7 +45,7 @@ textarea {
 
 ::placeholder {
     color: var(--cor-secundaria);
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-shadow: .2rem .2rem .5rem grey; 
 }
 
@@ -66,12 +66,13 @@ p {
 button {
     border-color: var(--cor-secundaria);
     border-radius: 1.5rem;
-    padding: 1.5rem 7rem;
+    padding: 1.25rem 6rem;
     font-size: .8rem;
 }
 
 .botao-azul {
     background-color: var(--cor-secundaria);
+    border-color: var(--cor-secundaria);
     color: var(--cor-primaria);
 }
 
@@ -82,6 +83,7 @@ button {
 
 .botao-sem-fundo {
     background-color: transparent;
+    border-color: var(--cor-secundaria);
     color: var(--cor-secundaria);
 
 }
