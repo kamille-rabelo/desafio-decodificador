@@ -1,13 +1,12 @@
 :root {
     --cor-primaria: white;
     --cor-secundaria: #0A3871;
-    --cor-teciaria: #E5E5E5;
+    --cor-teciaria: #E9ECF8;
     --cor-quartenaria: #D8DFE8;
 }
 
-body {
+html, body, main {
     box-sizing: border-box;
-    height: 100vh;
     background-color: var(--cor-teciaria);
 }
 
@@ -15,7 +14,7 @@ body {
     font-family: "Inter", sans-serif;
 }
 
-.conteudo-pagina, main {
+.conteudo__pagina, main {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -25,7 +24,7 @@ body {
 }
 
 
-.sessao-input {
+.conteudo__pagina__sessao__input {
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -49,16 +48,18 @@ textarea {
     text-shadow: .2rem .2rem .5rem grey; 
 }
 
-.small {
+.conteudo__pagina__sessao__input__small {
     font-size: small;
 }
 
 p {
     display: flex;
     gap: .5rem;
+    font-size: .8rem;
+    color: #8a8a8a;
 }
 
-.botoes {
+.conteudo__pagina__sessao__input__small__botoes {
     display: flex;
     gap: 1.5rem;
 }
@@ -94,7 +95,7 @@ button {
 
 }
 
-.sessao-output {
+.conteudo__pagina__sessao__output {
     background-color: var(--cor-primaria);
     display: flex;
     flex-direction: column;
@@ -109,11 +110,298 @@ button {
     gap: 2.9rem;
 }
 
-.output-texto {
+img, p, h3, main {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+.conteudo__pagina__sessao__output__texto {
     color: var(--cor-quartenaria);
     font-size: 1.5rem;
 }
 
-.output-conteudo {
+.conteudo__pagina__sessao__output__conteudo {
     padding: 1.5rem;
+}
+
+@media (max-width: 1250px) {
+    .conteudo__pagina, main {
+        gap: 15rem;
+    }
+    
+    
+    .conteudo__pagina__sessao__input {
+        width: 25%;
+
+    }
+    
+    textarea {
+        height: 50vh;
+        font-size: 2rem;
+    }
+    
+    ::placeholder {
+        font-size: 2rem;
+    }
+    
+    
+    .conteudo__pagina__sessao__input__small__botoes {
+        gap: 1.25rem;
+    }
+    
+    button {
+        border-radius: 1.5rem;
+        padding: 1rem 5rem;
+    }
+    
+    .conteudo__pagina__sessao__output {
+        width: 50vh;
+        height: 85vh;
+    }
+    
+    .conteudo__pagina__sessao__output__texto {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .conteudo__pagina, main {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        height: auto;
+        width: auto;
+        flex-direction: column;
+        gap: 4rem;
+        justify-content: center;
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    
+    .conteudo__pagina__sessao__input {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    textarea {
+        height: 50vh;
+        font-size: 2rem;
+    }
+    
+    ::placeholder {
+        color: var(--cor-secundaria);
+        font-size: 2rem;
+        text-shadow: .2rem .2rem .5rem grey; 
+    }
+    
+    p {
+        display: flex;
+        gap: .5rem;
+        font-size: .8rem;
+    }
+    
+    .conteudo__pagina__sessao__input__small__botoes {
+        display: flex;
+        gap: 1rem;
+    }
+    
+    button {
+        border-color: var(--cor-secundaria);
+        border-radius: 1.5rem;
+        padding: 1.25rem 6rem;
+        font-size: .8rem;
+    }
+    
+    .botao-azul {
+        background-color: var(--cor-secundaria);
+        border-color: var(--cor-secundaria);
+        color: var(--cor-primaria);
+    }
+    
+    .botao-azul:hover {
+        background-color: #0d2f5b;
+        border-color: #0d2f5b;
+    }
+    
+    .botao-sem-fundo {
+        background-color: transparent;
+        border-color: var(--cor-secundaria);
+        color: var(--cor-secundaria);
+    }
+    
+    .botao-sem-fundo:hover {
+        background-color: #cbcbcb;
+        border-color: #cbcbcb;
+    
+    }
+    
+    .conteudo__pagina__sessao__output {
+        background-color: var(--cor-primaria);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        height: auto;
+        border-radius: 2.5rem;
+        width: 35rem;
+        margin: auto;
+        gap: 2.9rem;
+        box-shadow: .2rem .2rem .5rem grey; 
+    }
+    
+    img, p, h3 {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+
+    img {
+        display: none;
+    }
+    
+    .conteudo__pagina__sessao__output__texto {
+        color: var(--cor-quartenaria);
+        font-size: 1.5rem;
+        height: auto;
+        width: auto;
+        padding: 2rem;
+    }
+    
+    .conteudo__pagina__sessao__output__conteudo {
+        padding: 1.2rem 6rem;
+    }
+
+    .botao-output {
+        margin: 1.5rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .conteudo__pagina {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        height: auto;
+        width: auto;
+        flex-direction: column;
+        gap: 4rem;
+        justify-content: center;
+        margin: 2rem 0;
+    }
+    
+    
+    .conteudo__pagina__sessao__input {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    textarea {
+        height: 50vh;
+        font-size: 2rem;
+    }
+    
+    ::placeholder {
+        color: var(--cor-secundaria);
+        font-size: 2rem;
+        text-shadow: .2rem .2rem .5rem grey; 
+    }
+    
+    p {
+        display: flex;
+        gap: .5rem;
+        font-size: .8rem;
+    }
+    
+    .conteudo__pagina__sessao__input__small__botoes {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    button {
+        border-color: var(--cor-secundaria);
+        border-radius: 1.5rem;
+        padding: 1.25rem 6rem;
+        font-size: .8rem;
+    }
+    
+    .botao-azul {
+        background-color: var(--cor-secundaria);
+        border-color: var(--cor-secundaria);
+        color: var(--cor-primaria);
+    }
+    
+    .botao-azul:hover {
+        background-color: #0d2f5b;
+        border-color: #0d2f5b;
+    }
+    
+    .botao-sem-fundo {
+        background-color: transparent;
+        border-color: var(--cor-secundaria);
+        color: var(--cor-secundaria);
+    }
+    
+    .botao-sem-fundo:hover {
+        background-color: #cbcbcb;
+        border-color: #cbcbcb;
+    
+    }
+    
+    .conteudo__pagina__sessao__output {
+        background-color: var(--cor-primaria);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        width: auto;
+        height: auto;
+        border-radius: 2.5rem;
+        margin: auto;
+        gap: 2.9rem;
+        box-shadow: .2rem .2rem .5rem grey; 
+    }
+    
+    img, p, h3 {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+
+    img {
+        display: none;
+    }
+    
+    .conteudo__pagina__sessao__output__texto {
+        color: var(--cor-quartenaria);
+        font-size: 1.5rem;
+        height: auto;
+        width: auto;
+        padding: 2rem;
+    }
+    
+    .conteudo__pagina__sessao__output__conteudo {
+        padding: 1.2rem 3rem;
+    }
+
+    .botao-output {
+        margin: 1.5rem;
+    }
 }

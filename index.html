@@ -13,10 +13,10 @@
 
 <body>
     <main>
-        <div class="conteudo-pagina">
-            <section class="sessao-input">
-                <textarea class="input-texto" placeholder="Digite seu texto" autofocus autocomplete="off"></textarea>
-                <div class="small">
+        <div class="conteudo__pagina">
+            <section class="conteudo__pagina__sessao__input">
+                <textarea class="conteudo__pagina__sessao__input__texto" placeholder="Digite seu texto" autofocus autocomplete="off"></textarea>
+                <div class="conteudo__pagina__sessao__input__small">
                     <p>
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_49_646)">
@@ -30,23 +30,23 @@
                         </svg>
                         Apenas letras minúsculas e sem acento.
                     </p>
-                    <div class="botoes">
+                    <div class="conteudo__pagina__sessao__input__small__botoes">
                         <button onclick="criptografar()" class="botao-azul">Criptografar</button>
                         <button onclick="descriptografar()" class="botao-sem-fundo">Descriptografar</button>
                     </div>
                 </div>
             </section>
             <section>
-                <div class="sessao-output sem-conteudo">
-                    <div class="output-conteudo">
-                        <img src="./assets/mulher.jpg" alt="mulher">
+                <div class="conteudo__pagina__sessao__output sem-conteudo">
+                    <div class="conteudo__pagina__sessao__output__conteudo">
+                        <img src="./assets/mulher.jpg" alt="mulher" height="300">
                         <h3>Nenhuma mensagem encontrada</h3>
                         <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
                     </div>
                 </div>
-                <div class="sessao-output com-conteudo" style="display: none;">
-                    <textarea class="output-texto" readonly autocomplete="off"></textarea>
-                    <button onclick="escreverTextoDoPainel()" class="botao-sem-fundo">Copiar</button>
+                <div class="conteudo__pagina__sessao__output com-conteudo" style="display: none;">
+                    <textarea class="conteudo__pagina__sessao__output__texto" readonly autocomplete="off"></textarea>
+                    <button onclick="escreverTextoDoPainel()" class="botao-sem-fundo botao-output">Copiar</button>
                 </div>
             </section>
         </div>

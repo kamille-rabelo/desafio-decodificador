@@ -8,7 +8,7 @@ const letras = {
 
 function criptografar() {
   let sentenca = ''
-  const input = document.querySelector('.input-texto').value
+  const input = document.querySelector('.conteudo__pagina__sessao__input__texto').value
 
   for (let index = 0; index < input.length; index++) {
     let elemento = input[index];
@@ -22,10 +22,10 @@ function criptografar() {
 }
 
 function preencher_texto_output(sentenca) {
-  const inputTexto = document.querySelector('.input-texto').value;
+  const inputTexto = document.querySelector('.conteudo__pagina__sessao__input__texto').value;
   const semConteudo = document.querySelector('.sem-conteudo');
   const comConteudo = document.querySelector('.com-conteudo');
-  const texto = document.querySelector('.output-texto');
+  const texto = document.querySelector('.conteudo__pagina__sessao__output__texto');
   
   if (inputTexto != '') {
       texto.innerHTML = sentenca;
@@ -39,7 +39,7 @@ function preencher_texto_output(sentenca) {
 
 function descriptografar() {
   let sentenca = ''
-  const input = document.querySelector('.input-texto').value
+  const input = document.querySelector('.conteudo__pagina__sessao__input__texto').value
   
   for (let index = 0; index < input.length; index++) {
     let elemento = input[index];
@@ -53,7 +53,7 @@ function descriptografar() {
 }
 
 async function escreverTextoDoPainel() {
-  const texto = document.querySelector('.output-texto').value
+  const texto = document.querySelector('.conteudo__pagina__sessao__output__texto').value
   try {
     await navigator.clipboard.writeText(texto);
   } catch (error) {
